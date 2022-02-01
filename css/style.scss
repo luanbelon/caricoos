@@ -1,0 +1,903 @@
+$yellow-bg: #f1c63b;
+$blue-text: #00245b;
+$blue-text-secondary: #07a2ab;
+$blue-bg: #232b52;
+$grey-txt: #706f6f;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  animation-duration: 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+/* header top line */
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-line-top {
+  background: $yellow-bg;
+  height: 47px;
+}
+
+.container__header-line-top p {
+  font-family: "Playfair Display", serif;
+  color: $blue-text;
+  font-size: 1.06rem;
+  margin: 0;
+}
+
+.header-main-content {
+  background: $blue-bg;
+  height: 7.12rem;
+}
+
+/* header main content */
+
+.header-main-content {
+  padding: 0 3.12rem;
+  justify-content: space-between;
+}
+
+.header-main-content img.logo {
+  width: 15.49rem;
+}
+
+.header-main-content nav {
+  display: flex;
+}
+
+.header-main-content nav ul.menu {
+  display: inline-flex;
+  gap: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 0;
+}
+
+ul.menu li a {
+  gap: 1rem;
+  color: $yellow-bg;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.43rem;
+}
+
+ul.menu li a:hover {
+  text-decoration: underline;
+  margin-top: 2px;
+}
+
+ul.menu li p {
+  color: $blue-text-secondary;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.43rem;
+}
+
+ul.menu li p span {
+  background: $blue-text-secondary;
+  border-radius: 5rem;
+  background: #07a2ab;
+  color: $blue-bg;
+  padding: 0px 10px;
+  margin-left: 0.3rem;
+  font-size: 1.3rem;
+}
+
+ul.menu li a.btn-login {
+  text-decoration: none;
+  background: $yellow-bg;
+  font-size: 1.3rem;
+  padding: 0.6rem 3rem;
+  color: $blue-bg;
+}
+
+/* Slider*/
+.carousel-caption {
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 50%;
+  right: 0;
+  left: 0;
+  padding: 0 3.12rem;
+  text-align: left;
+}
+
+.carousel-caption h5 {
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
+  font-size: 1.91rem;
+}
+
+.carousel-caption h1 {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 4.55rem;
+  margin-right: 20%;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.carousel-caption a {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+  color: $blue-bg;
+  background: $yellow-bg;
+  padding: 0.6rem 3rem;
+  font-weight: 700;
+}
+
+.carousel-indicators button.active {
+  background-color: $yellow-bg;
+}
+/* about */
+.content-about {
+  height: 38.93rem;
+}
+
+.container-box {
+  flex-direction: column;
+}
+
+.container-box img {
+  width: 13.49rem;
+  margin-bottom: 1.3rem;
+}
+
+.content-about .container-box h3 {
+  font-size: 1.37rem;
+  font-weight: 200;
+  line-height: 2.3rem;
+  color: $blue-bg;
+  text-align: center;
+  margin: 0 20%;
+  font-family: "Playfair Display", serif;
+}
+
+.content-about-box {
+  display: flex;
+  margin-top: 3rem;
+  padding: 0 3.12rem;
+}
+
+.content-about-itens {
+  width: 25%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content-about-itens:nth-child(1) img {
+  width: 5.87rem;
+  height: 5.2rem;
+}
+
+.content-about-itens:nth-child(2) img {
+  width: 6.14rem;
+  height: 4.73rem;
+}
+
+.content-about-itens:nth-child(3) img {
+  width: 5.36rem;
+  height: 5.39rem;
+}
+
+.content-about-itens:nth-child(4) img {
+  width: 4.7rem;
+  height: 5.4rem;
+}
+
+.content-about .content-about-itens p.content-about-item-text {
+  font-family: "open sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.content-recursos {
+  height: 31.5rem;
+  padding: 0 3.12rem 0 0;
+}
+
+.recursos-banner {
+  width: 50%;
+}
+
+.recursos-banner img {
+  width: 44.81rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.recursos-info {
+  padding: 0 0 0 2rem;
+}
+
+.recursos-info h4 {
+  font-family: "Bebas Neue", cursive;
+  color: $blue-bg;
+  font-size: 1.56rem;
+  font-weight: 500;
+}
+
+.recursos-info h3 {
+  font-family: "Playfair Display", serif;
+  color: $blue-text-secondary;
+  font-size: 2.18rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.recursos-info p {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+.recursos-info a {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+  color: $blue-bg;
+  background: $yellow-bg;
+  padding: 0.6rem 3rem;
+  font-weight: 700;
+}
+
+/* Newsletter */
+.newsletter {
+  height: 15.21rem;
+  background: no-repeat bottom center url(../src/bg-newsletter.png);
+  background-size: cover;
+  padding: 0 3.12rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.content-newsletter {
+  width: 60%;
+  text-align: center;
+}
+
+.content-newsletter h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.63rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.content-newsletter p {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.content-newsletter input {
+  border: none;
+  height: 2.82rem;
+}
+
+.content-newsletter input[type="email"] {
+  width: 20.17rem;
+  background: $blue-bg;
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+.content-newsletter input[type="email"]::placeholder {
+  color: $yellow-bg;
+}
+
+.content-newsletter input[type="submit"] {
+  width: 10.93rem;
+  background: $yellow-bg;
+  color: $blue-bg;
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.4rem;
+  font-weight: 600;
+  margin-left: -5px;
+}
+
+.banner-newsletter {
+  width: 40%;
+}
+
+.banner-newsletter img {
+  height: 18.93rem;
+  margin-right: 5rem;
+}
+
+/* servicios */
+.services {
+  height: 63.58rem;
+  background: no-repeat center url(../src/bg-servicios.jpeg),
+    linear-gradient(#152053c2, #152053c2);
+  background-blend-mode: overlay;
+  background-size: auto;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 3.12rem;
+}
+
+.services h4 {
+  font-family: "Bebas Neue", cursive;
+  color: $yellow-bg;
+  font-size: 1.56rem;
+  font-weight: 500;
+}
+
+.services h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.93rem;
+  font-weight: 300;
+  color: $blue-text-secondary;
+  margin-bottom: 2.45rem;
+}
+
+.services-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.45rem;
+}
+
+.services-itens img {
+  max-width: 18.04rem;
+  max-height: 30.51rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.services-itens h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.37rem;
+  padding: 1rem 0;
+  margin: 0 20%;
+  color: $yellow-bg;
+}
+
+.services h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.12rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.services p {
+  font-family: "open sans", sans-serif;
+  font-size: 1.37rem;
+  color: $blue-text-secondary;
+  margin-bottom: 1rem;
+}
+
+.services a {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+  color: $blue-bg;
+  background: $yellow-bg;
+  padding: 0.6rem 3rem;
+  font-weight: 700;
+}
+
+/* Gallery */
+.gallery {
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.gallery ul {
+  display: flex;
+}
+
+.gallery ul li img {
+  width: calc(100vw / 4);
+}
+
+/* media cart */
+.media-cart {
+  height: 32.76rem;
+  background: url(../src/bg-media-cart.png);
+  padding: 0 3.12rem;
+  margin-top: -5px;
+  justify-content: flex-start;
+}
+
+.download-materials {
+  width: 35.99rem;
+  height: 20.44rem;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 16px 0px #8d8d8d;
+  box-shadow: 0px 0px 16px 0px #8d8d8d;
+  border-radius: 0.5rem;
+  padding: 2.56rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.download-materials h4 {
+  font-family: "Bebas Neue", cursive;
+  color: $blue-text;
+  font-size: 1.56rem;
+  font-weight: 500;
+}
+
+.download-materials h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.12rem;
+  font-weight: 300;
+  color: $blue-text-secondary;
+  margin-bottom: 1rem;
+}
+
+.download-materials p {
+  font-family: "open sans", sans-serif;
+  font-size: 1rem;
+  color: $grey-txt;
+  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.download-materials a {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+  color: $blue-bg;
+  background: $yellow-bg;
+  padding: 0.6rem 3rem;
+  font-weight: 700;
+  width: 15.11rem;
+}
+
+.img-before-footer {
+  height: 21.36rem;
+  background: no-repeat center url(../src/bg-img-before-footer.png);
+  background-size: cover;
+}
+
+.nav-footer {
+  width: 100%;
+  padding: 2.56rem;
+  background: #fff;
+  border-top: 10px solid $blue-text-secondary;
+  flex-direction: column;
+}
+
+.nav-footer .website-footer {
+  display: flex;
+}
+
+.nav-footer .website-footer div {
+  width: 33.33%;
+}
+
+#footer-about,
+#footer-recursos {
+  border-right: 2px solid rgba(95, 95, 95, 0.575);
+}
+
+#footer-about img {
+  width: 17.49rem;
+  margin-bottom: 1.3rem;
+}
+
+#footer-about p {
+  line-height: 1.9rem;
+  margin: 0 6rem 2rem 0;
+  color: $blue-bg;
+}
+
+#footer-about a,
+#footer-recursos a,
+#footer-services a {
+  font-family: "open sans", sans-serif;
+  font-size: 1.2rem;
+  color: $blue-bg;
+  background: $yellow-bg;
+  padding: 0.6rem 3rem;
+  font-weight: 700;
+  width: 15.11rem;
+}
+
+#footer-recursos,
+#footer-services {
+  padding-left: 3rem;
+}
+
+#footer-recursos h4,
+#footer-services h4 {
+  font-family: "Bebas Neue", cursive;
+  color: $blue-text;
+  font-size: 1.56rem;
+  font-weight: 500;
+}
+
+#footer-recursos nav,
+#footer-services nav {
+  margin-bottom: 2rem;
+}
+
+#footer-recursos nav ul li,
+#footer-services nav ul li {
+  font-family: "Playfair Display", serif;
+  color: $blue-bg;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.3rem 0;
+}
+
+footer .footer-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8.92rem;
+  width: 100%;
+  background: no-repeat center url(../src/bg-footer-contact.png);
+  background-size: cover;
+  padding: 0 2.56rem;
+  border-bottom: 10px solid $blue-text-secondary;
+}
+
+.footer-contact div {
+  width: 33.33%;
+}
+
+.footer-contact #address-1,
+.footer-contact #address-2,
+.footer-contact #social {
+  border-left: 3px solid $yellow-bg;
+  padding-left: 0.7rem;
+}
+
+.footer-contact #address-1 h4,
+.footer-contact #address-2 h4,
+.footer-contact #social h4 {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.footer-contact #address-1 p,
+.footer-contact #address-2 p,
+.footer-contact #address-1 a,
+.footer-contact #address-2 a {
+  font-family: "open sans", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+#social nav ul {
+  display: flex;
+}
+
+#social nav ul li {
+  margin-right: 1rem;
+  color: $yellow-bg;
+  font-size: 1.1rem;
+  border: 2px solid $yellow-bg;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5rem;
+}
+
+#social nav ul li a {
+  color: $yellow-bg;
+}
+
+@media (max-width: 768px) {
+  /*Menu mobile */
+  #menu {
+    position: absolute;
+    width: 100%;
+    top: 9rem;
+    right: 0;
+    background: $blue-bg;
+    display: block;
+    height: 0;
+    z-index: 9000;
+    visibility: hidden;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 7.12rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu li {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid #e0e0e0;
+    color: #fff;
+  }
+
+  #menu-2 {
+    display: block;
+    margin: 0;
+  }
+
+  #btn-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: transparent;
+  }
+  #hamburger {
+    border-top: 3px solid;
+    width: 40px;
+    color: $yellow-bg;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: currentColor;
+    margin-top: 6px;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::after {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: -9px;
+  }
+  #nav.active #hamburger::before {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  /* TOP BANNER */
+  .header-line-top {
+    height: auto;
+    padding: 0.5rem 1.12rem;
+  }
+  .container__header-line-top p {
+    color: $blue-text;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .header-main-content {
+    padding: 0 1.12rem;
+  }
+  .header-main-content img.logo {
+    width: 9.49rem;
+  }
+
+  /* SLIDER */
+  .slider {
+    height: auto;
+    margin: 0 0 4rem 0;
+  }
+
+  /* ABOUT */
+  .container-box,
+  .content-recursos {
+    height: auto;
+    padding: 2rem 1.12rem;
+  }
+
+  .content-about {
+    padding: 2rem 0;
+  }
+  .container-box img {
+    width: 8.49rem;
+  }
+
+  .content-about .container-box h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0 1rem;
+  }
+
+  .content-about-box {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .content-about-itens {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .content-about-itens:nth-child(1) img {
+    width: 4.69rem;
+    height: 4.16rem;
+  }
+
+  .content-about-itens:nth-child(2) img {
+    width: 4.91rem;
+    height: 3.78rem;
+  }
+
+  .content-about-itens:nth-child(3) img {
+    width: 4.28rem;
+    height: 4.31rem;
+  }
+
+  .content-about-itens:nth-child(4) img {
+    width: 3.76rem;
+    height: 4.32rem;
+  }
+
+  /* RECURSOS */
+
+  .content-recursos {
+    margin: 3rem 0rem;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .recursos-banner,
+  .recursos-info {
+    width: 100%;
+  }
+
+  .recursos-banner img {
+    width: 95vw;
+  }
+  .recursos-info {
+    padding: 1rem 1.12rem;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    height: auto;
+    padding: 2rem 1.12rem;
+  }
+
+  .content-newsletter {
+    width: 100vw;
+  }
+  .content-newsletter input[type="email"] {
+    width: 20.17rem;
+  }
+  .banner-newsletter {
+    display: none;
+  }
+
+  /* Services */
+  .services {
+    height: auto;
+    padding: 2rem 1.12rem;
+    text-align: center;
+  }
+
+  .services-box {
+    flex-wrap: wrap;
+  }
+
+  .services-itens {
+    width: 43vw;
+    margin-bottom: 1rem;
+  }
+
+  .services-itens h5 {
+    font-size: 1rem;
+    margin: 0 10%;
+  }
+
+  /* media cart */
+  .media-cart {
+    height: auto;
+    padding: 2rem 1.12rem;
+  }
+
+  .download-materials {
+    width: 100vw;
+    height: 20.44rem;
+    padding: 1.56rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* after contact */
+  .img-before-footer {
+    height: 6rem;
+  }
+
+  /* contact */
+  .nav-footer {
+    width: 100%;
+    padding: 2rem 1.12rem;
+  }
+
+  .website-footer {
+    flex-direction: column;
+  }
+
+  .nav-footer .website-footer div {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  #footer-about img {
+    width: 12.49rem;
+  }
+  #footer-about,
+  #footer-recursos {
+    border-right: none;
+  }
+
+  #footer-recursos,
+  #footer-services {
+    padding-left: 0;
+    margin-bottom: 3rem;
+  }
+
+  #footer-about {
+    margin-bottom: 3rem;
+  }
+
+  #footer-about p {
+    font-size: 1rem;
+    margin: 0 0 2rem 0;
+  }
+  /* footer */
+
+  footer .footer-contact {
+    height: auto;
+    padding: 2rem 1.12rem;
+    flex-direction: column;
+    background: repeat center url(../src/bg-footer-contact.png);
+    background-size: cover;
+  }
+
+  .footer-contact div {
+    width: 100%;
+    margin: 1rem 1.12rem;
+  }
+
+  #social nav ul li {
+    margin-right: 0.7rem;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  button#btn-mobile {
+    display: none;
+  }
+}
