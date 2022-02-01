@@ -702,23 +702,53 @@ footer .footer-contact {
     padding: 0 1.12rem;
   }
   .header-main-content img.logo {
-    width: 9.49rem;
+    width: 11.49rem;
   }
 
   /* SLIDER */
   .slider {
     height: auto;
-    margin: 0 0 4rem 0;
+    margin: 0 0 2rem 0;
   }
+
+  .carousel-inner{
+    height: 60vh;
+  }
+
+  .carousel-item, .carousel-item img{ height: 60vh; }
+  .carousel-item img{ 
+      max-width: 100%;
+      object-fit: cover;
+   }
+
+   .carousel-caption{
+       padding: 1rem 1.12rem;
+   }
+
+   .carousel-caption h5 { font-size: 1.3rem; }
+
+   .carousel-caption h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    margin-right: 0;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    }
+
+    .carousel-caption a {
+        font-size: 1rem;
+        padding: 0.4rem 1.7rem;
+    }
 
   /* ABOUT */
   .container-box,
   .content-recursos {
     height: auto;
-    padding: 2rem 1.12rem;
+    padding: 0rem 1.12rem;
   }
 
   .content-about {
+    height: auto ;
     padding: 2rem 0;
   }
   .container-box img {
@@ -764,7 +794,7 @@ footer .footer-contact {
   /* RECURSOS */
 
   .content-recursos {
-    margin: 3rem 0rem;
+    margin: 1.5em 0rem;
     padding: 0;
     flex-direction: column;
   }
@@ -779,6 +809,7 @@ footer .footer-contact {
   }
   .recursos-info {
     padding: 1rem 1.12rem;
+    text-align: center;
   }
 
   /* Newsletter */
@@ -803,6 +834,9 @@ footer .footer-contact {
     padding: 2rem 1.12rem;
     text-align: center;
   }
+  .services h1{
+      color: #fff;
+  }
 
   .services-box {
     flex-wrap: wrap;
@@ -811,6 +845,11 @@ footer .footer-contact {
   .services-itens {
     width: 43vw;
     margin-bottom: 1rem;
+  }
+
+  .services-itens img {
+    max-height: 13.51rem;
+    border-radius: 1rem;
   }
 
   .services-itens h5 {
