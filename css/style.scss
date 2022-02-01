@@ -74,8 +74,12 @@ p {
 .header-main-content nav ul.menu {
   display: inline-flex;
   gap: 3rem;
-  margin-left: 2rem;
   margin-bottom: 0;
+}
+
+ul#menu-2{
+    border-left: 2px solid $yellow-bg;
+    padding-left: 2rem;
 }
 
 ul.menu li a {
