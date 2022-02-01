@@ -1,4 +1,5 @@
-$yellow-bg: #f1c63b;
+$yellow-bg: #f1C63B;
+$yellow-hover: #d4ac27;
 $blue-text: #00245b;
 $blue-text-secondary: #07a2ab;
 $blue-bg: #232b52;
@@ -86,7 +87,8 @@ ul.menu li a {
 
 ul.menu li a:hover {
   text-decoration: underline;
-  margin-top: 2px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
 }
 
 ul.menu li p {
@@ -111,6 +113,10 @@ ul.menu li a.btn-login {
   font-size: 1.3rem;
   padding: 0.6rem 3rem;
   color: $blue-bg;
+}
+
+ul.menu li a.btn-login:hover{
+    background: $yellow-hover;
 }
 
 /* Slider*/
@@ -146,6 +152,10 @@ ul.menu li a.btn-login {
   background: $yellow-bg;
   padding: 0.6rem 3rem;
   font-weight: 700;
+}
+
+.carousel-caption a:hover{
+    background: $yellow-hover;
 }
 
 .carousel-indicators button.active {
@@ -261,6 +271,10 @@ ul.menu li a.btn-login {
   background: $yellow-bg;
   padding: 0.6rem 3rem;
   font-weight: 700;
+}
+
+.recursos-info a:hover{
+    background: $yellow-hover;
 }
 
 /* Newsletter */
@@ -404,6 +418,10 @@ ul.menu li a.btn-login {
   font-weight: 700;
 }
 
+.services a:hover{
+    background: $yellow-hover;
+}
+
 /* Gallery */
 .gallery {
   height: auto;
@@ -474,6 +492,10 @@ ul.menu li a.btn-login {
   width: 15.11rem;
 }
 
+.download-materials a:hover{
+    background: $yellow-hover;
+}
+
 .img-before-footer {
   height: 21.36rem;
   background: no-repeat center url(../src/bg-img-before-footer.png);
@@ -522,6 +544,10 @@ ul.menu li a.btn-login {
   padding: 0.6rem 3rem;
   font-weight: 700;
   width: 15.11rem;
+}
+
+#footer-about a:hover, #footer-recursos a:hover, #footer-services a:hover{
+    background: $yellow-hover;
 }
 
 #footer-recursos,

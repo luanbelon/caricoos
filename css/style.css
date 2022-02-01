@@ -40,7 +40,7 @@ p {
 }
 
 .header-line-top {
-  background: #f1c63b;
+  background: #f1C63B;
   height: 47px;
 }
 
@@ -85,14 +85,15 @@ p {
 
 ul.menu li a {
   gap: 1rem;
-  color: #f1c63b;
+  color: #f1C63B;
   font-family: "Bebas Neue", cursive;
   font-size: 1.43rem;
 }
 
 ul.menu li a:hover {
   text-decoration: underline;
-  margin-top: 2px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
 }
 
 ul.menu li p {
@@ -113,10 +114,14 @@ ul.menu li p span {
 
 ul.menu li a.btn-login {
   text-decoration: none;
-  background: #f1c63b;
+  background: #f1C63B;
   font-size: 1.3rem;
   padding: 0.6rem 3rem;
   color: #232b52;
+}
+
+ul.menu li a.btn-login:hover {
+  background: #d4ac27;
 }
 
 /* Slider*/
@@ -150,13 +155,17 @@ ul.menu li a.btn-login {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
   color: #232b52;
-  background: #f1c63b;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
 }
 
+.carousel-caption a:hover {
+  background: #d4ac27;
+}
+
 .carousel-indicators button.active {
-  background-color: #f1c63b;
+  background-color: #f1C63B;
 }
 
 /* about */
@@ -271,9 +280,13 @@ ul.menu li a.btn-login {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
   color: #232b52;
-  background: #f1c63b;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
+}
+
+.recursos-info a:hover {
+  background: #d4ac27;
 }
 
 /* Newsletter */
@@ -320,24 +333,24 @@ ul.menu li a.btn-login {
 }
 
 .content-newsletter input[type="email"]::-webkit-input-placeholder {
-  color: #f1c63b;
+  color: #f1C63B;
 }
 
 .content-newsletter input[type="email"]:-ms-input-placeholder {
-  color: #f1c63b;
+  color: #f1C63B;
 }
 
 .content-newsletter input[type="email"]::-ms-input-placeholder {
-  color: #f1c63b;
+  color: #f1C63B;
 }
 
 .content-newsletter input[type="email"]::placeholder {
-  color: #f1c63b;
+  color: #f1C63B;
 }
 
 .content-newsletter input[type="submit"] {
   width: 10.93rem;
-  background: #f1c63b;
+  background: #f1C63B;
   color: #232b52;
   font-family: "open sans", sans-serif;
   font-size: 1rem;
@@ -372,7 +385,7 @@ ul.menu li a.btn-login {
 
 .services h4 {
   font-family: "Bebas Neue", cursive;
-  color: #f1c63b;
+  color: #f1C63B;
   font-size: 1.56rem;
   font-weight: 500;
 }
@@ -410,7 +423,7 @@ ul.menu li a.btn-login {
   font-size: 1.37rem;
   padding: 1rem 0;
   margin: 0 20%;
-  color: #f1c63b;
+  color: #f1C63B;
 }
 
 .services h2 {
@@ -432,9 +445,13 @@ ul.menu li a.btn-login {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
   color: #232b52;
-  background: #f1c63b;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
+}
+
+.services a:hover {
+  background: #d4ac27;
 }
 
 /* Gallery */
@@ -512,10 +529,14 @@ ul.menu li a.btn-login {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
   color: #232b52;
-  background: #f1c63b;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
   width: 15.11rem;
+}
+
+.download-materials a:hover {
+  background: #d4ac27;
 }
 
 .img-before-footer {
@@ -567,10 +588,14 @@ ul.menu li a.btn-login {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
   color: #232b52;
-  background: #f1c63b;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
   width: 15.11rem;
+}
+
+#footer-about a:hover, #footer-recursos a:hover, #footer-services a:hover {
+  background: #d4ac27;
 }
 
 #footer-recursos,
@@ -626,7 +651,7 @@ footer .footer-contact {
 .footer-contact #address-1,
 .footer-contact #address-2,
 .footer-contact #social {
-  border-left: 3px solid #f1c63b;
+  border-left: 3px solid #f1C63B;
   padding-left: 0.7rem;
 }
 
@@ -657,15 +682,15 @@ footer .footer-contact {
 
 #social nav ul li {
   margin-right: 1rem;
-  color: #f1c63b;
+  color: #f1C63B;
   font-size: 1.1rem;
-  border: 2px solid #f1c63b;
+  border: 2px solid #f1C63B;
   padding: 0.3rem 0.6rem;
   border-radius: 5rem;
 }
 
 #social nav ul li a {
-  color: #f1c63b;
+  color: #f1C63B;
 }
 
 @media (max-width: 768px) {
@@ -712,7 +737,7 @@ footer .footer-contact {
   #hamburger {
     border-top: 3px solid;
     width: 40px;
-    color: #f1c63b;
+    color: #f1C63B;
   }
   #hamburger::after,
   #hamburger::before {
