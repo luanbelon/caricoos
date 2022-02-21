@@ -22,7 +22,7 @@
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/font-awesome/css/all.css">
     <link rel="stylesheet" href="./css/bootstrap-5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacto.css">
     <title>Caricoos School</title>
 </head>
 <body>
@@ -39,7 +39,7 @@
                     <span id="hamburger"></span>
                 </button>
                 <ul class="menu" id="menu">
-                    <li><a href="/#home">Inico</a></li>
+                    <li><a href="/">Inico</a></li>
                     <li><a href="/recursos.html">Recursos</a></li>
                     <li><a href="/servicios.html">Servicios</a></li>
                     <li><a href="/contacto.html">Contacto</a></li>
@@ -92,116 +92,44 @@
         </div>  
     </section>
 
-    <section class="content-about container-flex js-scroll">
+    <section class="content-contact-title container-flex js-scroll">
         <section class="container-box container-flex">
             <img src="./src/logo2.png">
-            <h3>El personal de educación y alcance de CARICOOS se dedica a desarrollar diversas actividades educativas con el fin que el público pueda:</h3>
-            
-            <div class="content-about-box">
-                <div class="content-about-itens">
-                    <img src="./src/icon1.png">
-                    <p class="content-about-item-text">
-                        Conocer qué productos tiene CARICOOS y cómo acceder a éstos.
-                    </p>
-                </div>
-                <div class="content-about-itens">
-                    <img src="./src/icon2.png">
-                    <p class="content-about-item-text">
-                        Interpretar correctamente cada uno de los productos que se proveen gratuitamente en la página web de CARICOOS.
-                    </p>
-                </div>
-                <div class="content-about-itens">
-                    <img src="./src/icon3.png">
-                    <p class="content-about-item-text">
-                        Conocer la aplicabilidad de los datos en tiempo real de la boya y los pronósticos (mapas gráficos) en la toma de decisiones.
-                    </p>
-                </div>
-                <div class="content-about-itens">
-                    <img src="./src/icon4.png">
-                    <p class="content-about-item-text">
-                        Comprender fundamentos básicos sobre olas, vientos y corrientes y su relevancia en nuestra vida diaria.
-                    </p>
-                </div>
+            <h1>Contacto</h1>
+        </section>
+    </section>
+
+    <section class="content-contact-info-img container-flex js-scroll">
+        <section class="container-box container-flex">
+            <img src="./src/banner-contact.jpg">
+        </section>
+    </section>
+
+    <section class="content-contact-form container-flex js-scroll" id="contact">
+        <section class="container-box container-flex">
+            <div class="contact-data">
+                <h1>CONTACTENOS</h1>
+                <hr>
+                <p>E.MAIL: <span>contact@caricoos.org</span></p>
+                <p>Teléfono: <span>787-832-4040 x.6350</span></p>
+                <hr>
+                <p>Dirección:</p>
+                <p><span>Centro de Investigación y Desarrollo <br>UPRM Salón 205 / Carr. 108 Km 1.0 / Mayaguez PR 00680</span></p>
+            </div>
+            <div class="contact-form">
+                <h1>CONTACTA CON NOSOTROS</h1>
+                <p>En breve nos pondremos en contacto.<br>
+                Muchas gracias</p>
+                <form action="">
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"><br>
+                    <input type="email" name="E-mail" id="E-mail" placeholder="E-mail"><br>
+                    <input type="text" name="Motivo de contacto" id="Motivo-de-contacto" placeholder="Motivo de contacto"><br>
+                    <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="Comentario"></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
         </section>
-
     </section>
-
-    <section class="content-recursos container-flex js-scroll" id="recursos">
-        <div class="recursos-banner">
-            <img src="./src/banner-recursos.jpeg">
-        </div>
-        <div class="recursos-info">
-            <h4>Recursos</h4>
-            <h3>Estaciones meteorológicas</h3>
-            <p>Son un conjunto de instrumentos instalados en un espacio marino o 
-               terrestre y cuya finalidad es recopilar datos en tiempo real de 
-               velocidad y dirección del viento, temperatura del aire, humedad 
-               relativa, presión barométrica, entre otros parámetros de la atmósfera.</p>
-            <a href="">+ Recursos</a>
-        </div>
-    </section>
-
-    <section class="newsletter container-flex js-scroll">
-        <div class="content-newsletter">
-            <h1>¡Suscríbete a nuestro boletín informativo ahora!</h1>
-            <p>Recibe las últimas novedades de Caricoos</p>
-            <form action="">
-                <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                <input type="submit" value="Suscribirse">
-            </form>
-        </div>
-        <div class="banner-newsletter">
-            <img src="./src/banner-newsletter.png" alt="">
-        </div>
-    </section>
-
-    <section class="services container-flex js-scroll" id="servicios">
-        <h4>Servicios</h4>
-        <h1>¿Que hacemos?</h1>
-        <div class="services-box">
-            <div class="services-itens">
-                <img src="./src/servicio1.png" alt="">
-                <h5>Administración de Datos y Comunicaciones</h5>
-            </div>
-            <div class="services-itens">
-                <img src="./src/servicio2.png" alt="">
-                <h5>Desarrollo de Productos</h5>
-            </div>
-            <div class="services-itens">
-                <img src="./src/servicio3.png" alt="">
-                <h5>Modelos de predicción</h5>
-            </div>
-            <div class="services-itens">
-                <img src="./src/servicio4.png" alt="">
-                <h5>Observaciones satelitales</h5>
-            </div>
-        </div>
-        <h2>¿Quieres conocer más acerca de lo que hacemos y cómo te puedes beneficiar?</h2>
-        <p>Solicita nuestros servicios educativos</p>
-        <a href="">Ir a Servicios</a>
-    </section>
-
-    <section class="gallery container-flex js-scroll">
-        <ul>
-            <li><img src="./src/gallery1.png"></li>
-            <li><img src="./src/gallery2.png"></li>
-            <li><img src="./src/gallery3.png"></li>
-            <li><img src="./src/gallery4.png"></li>
-        </ul>
-    </section>
-
-    <section class="media-cart container-flex js-scroll">
-        <div class="download-materials">
-            <h4>Carrito</h4>
-            <h1>Descarga de material</h1>
-            <p>Accede y descarga nuestros recursos educativos gratuitos.</p>
-            <a href="">Ir a Descargas</a>
-        </div>
-    </section>
-
-    <div class="img-before-footer js-scroll">
-    </div>
 
     <section class="nav-footer container-flex contact js-scroll" id="contacto">
         <section class="website-footer">
@@ -209,7 +137,7 @@
                 <img src="./src/logo-footer.png">
                 <p>El personal de educación y alcance de CARICOOS se dedica a 
                    desarrollar diversas actividades educativas con el fin que
-                   el público pueda conocer e interpretar la información presentada en la página web <a href="https://www.caricoos.org">www.caricoos.org</a></p>
+                   el público pueda conocer e interpretar la información presentada en la página web <a href="https://www.caricoos.org" id="link">www.caricoos.org</a></p>
                 <a href="https://www.caricoos.org" id="btn-yellow">+ Info</a>
             </div>
             <div id="footer-recursos">

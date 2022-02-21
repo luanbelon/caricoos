@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./css/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap-5.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/servicios.css" />
+    <title>Caricoos School</title>
+  </head>
+  <body>
+    <header>
+      <section class="header-line-top container-flex">
+        <div class="container__header-line-top container-flex">
+          <p>
+            CARICOOS es el Sistema de Observación del Océano Costero en el
+            Caribe Estadounidense
+          </p>
+        </div>
+      </section>
+      <section class="header-main-content container-flex">
+        <img src="./src/logo.png" alt="Logo Caricoos" class="logo" />
+        <nav class="menu-container" id="nav">
+          <button id="btn-mobile" onclick="toggleMenu()">
+            <span id="hamburger"></span>
+          </button>
+          <ul class="menu" id="menu">
+            <li><a href="/">Inico</a></li>
+            <li><a href="/recursos.html">Recursos</a></li>
+            <li><a href="/servicios.html">Servicios</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+            <ul class="menu" id="menu-2">
+              <li>
+                <p>Descargas <span>2</span></p>
+              </li>
+              <li>
+                <a href="#" class="btn-login">Iniciar Sesión</a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <section class="slider js-scroll" id="home">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/slide01.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block w-100 img-fluid">
+              <h5>SISTEMA DE BOYAS</h5>
+              <h1>Boya de monitoreo <br />de acidificación oceánica</h1>
+              <a href="#">+ Info</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./src/slide02.png"
+              class="d-block w-100 img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>SISTEMA DE BOYAS</h5>
+              <h1>Boya de monitoreo de acidificación oceánica</h1>
+              <a href="#">+ Info</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./src/slide03.png"
+              class="d-block w-100 img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>SISTEMA DE BOYAS</h5>
+              <h1>Boya de monitoreo de acidificación oceánica</h1>
+              <a href="#">+ Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-servicios-title container-flex js-scroll">
+      <section class="container-box container-flex">
+        <img src="./src/logo2.png" />
+        <h1>SERVICIOS</h1>
+        <h3>
+          ¿Quieres conocer más acerca de lo que hacemos y cómo te puedes
+          beneficiar?
+        </h3>
+        <h1>Solicita nuestros servicios educativos</h1>
+      </section>
+    </section>
+
+    <section
+      class="content-servicios-banner container-flex js-scroll"
+    ></section>
+
+    <section class="content-servicios container-flex js-scroll" id="servicios">
+      <div class="servicios-banner">
+        <img src="./src/servivios-webinar.jpg" />
+      </div>
+      <div class="servicios-info">
+        <h4>SERVICIOS</h4>
+        <h3>Webinars</h3>
+        <p>
+          Ofrecemos webinars sobre fundamentos básicos sobre olas y viento y
+          sobre productos que genera CARICOOS sobre estos y otros temas. De
+          tener una petición de tema en particular, puedes comunicarte con
+          nosotros para coordinar.
+        </p>
+        <ul>
+          <li>Audiencia: comunidad en general, maestros, estudiantes.</li>
+          <li>Cantidad de participantes: por acuerdo</li>
+          <li>Duración: 1.5 horas</li>
+          <li>Modalidad: en línea</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-servicios container-flex js-scroll" id="servicios">
+      <div class="servicios-banner">
+        <img src="./src/servicios-exhibidores-educativos.jpg" />
+      </div>
+      <div class="servicios-info">
+        <h4>SERVICIOS</h4>
+        <h3>Exhibidores educativos</h3>
+        <p>
+          Brindamos este servicio a ferias ambientales, congresos
+          universitarios, eventos deportivos, entre otros.
+        </p>
+        <ul>
+          <li>Audiencia: comunidad en general</li>
+          <li>Lugar: por acuerdo</li>
+          <li>Reservaciones: al menos 1 mes de anticipación al evento.</li>
+          <li>Modalidad: presencial</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-servicios container-flex js-scroll" id="servicios">
+      <div class="servicios-banner">
+        <img src="./src/servicios-Charlas.jpg" />
+      </div>
+      <div class="servicios-info">
+        <h4>SERVICIOS</h4>
+        <h3>Charlas</h3>
+        <p>
+          Durante la charla "El Tiempo Costero" el participante aprenderá a cómo
+          acceder los datos a tiempo real de las boyas y cómo interpretar
+          pronósticos de viento y oleaje.
+        </p>
+        <ul>
+          <li>Audiencia: comunidad en general</li>
+          <li>
+            Cantidad de participantes: varía dependiendo la modalidad
+            seleccionada
+          </li>
+          <li>Duración: 1 hora</li>
+          <li>Lugar: por acuerdo</li>
+          <li>Modalidad: presencial o virtual</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-servicios container-flex js-scroll" id="servicios">
+      <div class="servicios-banner">
+        <img src="./src/talleres.jpg" />
+      </div>
+      <div class="servicios-info">
+        <h4>SERVICIOS</h4>
+        <h3>Talleres</h3>
+        <p>
+          Ofrecemos talleres educativos sobre los siguientes temas: olas, viento
+          y corrientes. Por medio de actividades interactivas podrás explorar
+          los productos que CARICOOS ofrece sobre estos temas.
+        </p>
+        <ul>
+          <li>
+            Audiencia: comunidad en general y estudiantes de Nivel Superior
+          </li>
+          <li>Cantidad máxima de personas: 25 personas por sesión</li>
+          <li>Duración aproximada: 1.5 horas</li>
+          <li>Lugar: por acuerdo</li>
+          <li>Modalidad: presencial</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-servicios container-flex js-scroll" id="servicios">
+      <div class="servicios-banner">
+        <img src="./src/recorrido.jpg" />
+      </div>
+      <div class="servicios-info">
+        <h4>SERVICIOS</h4>
+        <h3>Recorrido por laboratorios de investigación</h3>
+        <p>
+          Visitarás laboratorios donde se construyen y se da mantenimiento a los
+          gliders y otros instrumentos de investigación.
+        </p>
+        <ul>
+          <li>
+            Cantidad máxima de personas: 10 por sesión (dos sesiones máx.)
+          </li>
+          <li>Audiencia: comunidad en general y estudiantes</li>
+          <li>
+            Duración aproximada: 2.5 horas (preferiblemente de 9:00 a.m. 11:30
+            a.m.)
+          </li>
+          <li>Lugar: Isla Magueyes, Depto de Ciencias Marinas (Lajas, PR)</li>
+          <li>Modalidad: presencial</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-servicios container-flex js-scroll" id="servicios">
+      <div class="servicios-banner">
+        <img src="./src/asesoria.jpg" />
+      </div>
+      <div class="servicios-info">
+        <h4>SERVICIOS</h4>
+        <h3>Asesoría en la interpretación de datos</h3>
+        <p>
+          Te ayudamos a interpretar nuestros productos, a buscar datos
+          históricos y/o a desarrollar proyectos de feria científica.
+        </p>
+        <ul>
+          <li>Audiencia: comunidad en general y estudiantes</li>
+          <li>Modalidad: vía telefónica o virtual</li>
+        </ul>
+        <p>
+          Para solicitar este servicio debes escribir un correo electrónico o
+          llamar a nuestras oficinas.
+        </p>
+      </div>
+    </section>
+
+    <section class="nav-footer container-flex contact js-scroll" id="contacto">
+      <section class="website-footer">
+        <div id="footer-about">
+          <img src="./src/logo-footer.png" />
+          <p>
+            El personal de educación y alcance de CARICOOS se dedica a
+            desarrollar diversas actividades educativas con el fin que el
+            público pueda conocer e interpretar la información presentada en la
+            página web
+            <a href="https://www.caricoos.org" id="link">www.caricoos.org</a>
+          </p>
+          <a href="https://www.caricoos.org" id="btn-yellow">+ Info</a>
+        </div>
+        <div id="footer-recursos">
+          <h4>recursos</h4>
+          <nav>
+            <ul>
+              <li>Instrumentación</li>
+              <li>Boyas de datos oceanográficos</li>
+              <li>Boya de Monitoreo de Acidificación Oceánica</li>
+              <li>Estaciones Meteorológicas</li>
+              <li>SeaGlider (Planeador)</li>
+              <li>Radar de alta frecuencia</li>
+            </ul>
+          </nav>
+          <a href="" id="btn-yellow">Ir a recursos</a>
+        </div>
+        <div id="footer-services">
+          <h4>Servicios</h4>
+          <nav>
+            <ul>
+              <li>Administración de Datos y Comunicaciones</li>
+              <li>Desarrollo de Productos</li>
+              <li>Modelos de predicción</li>
+              <li>Observaciones satelitales</li>
+              <li>Red de observación instrumental</li>
+            </ul>
+          </nav>
+          <a href="" id="btn-yellow">Ir a servicios</a>
+        </div>
+      </section>
+    </section>
+
+    <footer class="container-flex">
+      <section class="footer-contact">
+        <div id="address-1">
+          <h4>HEADQUARTERS</h4>
+          <p>Isla Magueyes, La Parguera, PO Box 3446, Lajas, PR 00667</p>
+          <a href="tel:7878992564">(787) 899­-2564</a>
+        </div>
+        <div id="address-2">
+          <h4>UPRM R&D CENTER</h4>
+          <p>Road 108, KM 1.0, Bo. Miradero, Mayaguez, PR 00680</p>
+          <a href="tel:7878324040">(787) 832­-4040 x 6454</a>
+        </div>
+        <div id="social">
+          <h4>NO OLVIDES SEGUIRNOS EN LAS REDES SOCIALES:</h4>
+          <nav>
+            <ul class="social">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

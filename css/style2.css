@@ -1,19 +1,14 @@
-$yellow-bg: #f1C63B;
-$yellow-hover: #d4ac27;
-$blue-text: #00245b;
-$blue-text-secondary: #07a2ab;
-$blue-bg: #232b52;
-$grey-txt: #706f6f;
-
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 a {
@@ -27,54 +22,46 @@ ul {
 }
 
 p {
-  font-family: open sans;
+  font-family: "Playfair Display", serif;
   margin: 0;
 }
 
-#btn-yellow{
-  font-family: "open sans", sans-serif;
-  font-size: 1.2rem;
-  color: $blue-bg;
-  background: $yellow-bg;
-  padding: 0.6rem 3rem;
-  font-weight: 700;
-  width: 15.11rem;
-}
-
-#btn-yellow:hover{
-    background: $yellow-hover;
-}
-
 /* header top line */
-
 .container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-line-top {
-  background: $yellow-bg;
+  background: #f1C63B;
   height: 47px;
 }
 
 .container__header-line-top p {
-  font-family: "Bebas Neue", cursive;
-  color: $blue-text;
-  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  color: #00245b;
+  font-size: 1.06rem;
   margin: 0;
 }
 
 .header-main-content {
-  background: $blue-bg;
+  background: #232b52;
   height: 7.12rem;
 }
 
 /* header main content */
-
 .header-main-content {
   padding: 0 3.12rem;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-main-content img.logo {
@@ -82,23 +69,27 @@ p {
 }
 
 .header-main-content nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .header-main-content nav ul.menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   gap: 3rem;
   margin-bottom: 0;
 }
 
-ul#menu-2{
-    border-left: 2px solid $yellow-bg;
-    padding-left: 2rem;
+ul#menu-2 {
+  border-left: 2px solid #f1C63B;
+  padding-left: 2rem;
 }
 
 ul.menu li a {
   gap: 1rem;
-  color: $yellow-bg;
+  color: #f1C63B;
   font-family: "Bebas Neue", cursive;
   font-size: 1.43rem;
 }
@@ -109,21 +100,17 @@ ul.menu li a:hover {
   text-decoration-thickness: 3px;
 }
 
-ul.menu li a:active{
-  text-decoration: $yellow-hover underline;
-}
-
 ul.menu li p {
-  color: $blue-text-secondary;
+  color: #07a2ab;
   font-family: "Bebas Neue", cursive;
   font-size: 1.43rem;
 }
 
 ul.menu li p span {
-  background: $blue-text-secondary;
+  background: #07a2ab;
   border-radius: 5rem;
   background: #07a2ab;
-  color: $blue-bg;
+  color: #232b52;
   padding: 0px 10px;
   margin-left: 0.3rem;
   font-size: 1.3rem;
@@ -131,19 +118,20 @@ ul.menu li p span {
 
 ul.menu li a.btn-login {
   text-decoration: none;
-  background: $yellow-bg;
+  background: #f1C63B;
   font-size: 1.3rem;
   padding: 0.6rem 3rem;
-  color: $blue-bg;
+  color: #232b52;
 }
 
-ul.menu li a.btn-login:hover{
-    background: $yellow-hover;
+ul.menu li a.btn-login:hover {
+  background: #d4ac27;
 }
 
 /* Slider*/
 .carousel-caption {
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   bottom: initial;
   top: 50%;
   right: 0;
@@ -159,7 +147,7 @@ ul.menu li a.btn-login:hover{
 }
 
 .carousel-caption h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Playfair Display", serif;
   color: #fff;
   font-size: 4.55rem;
   margin-right: 20%;
@@ -170,26 +158,30 @@ ul.menu li a.btn-login:hover{
 .carousel-caption a {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
-  color: $blue-bg;
-  background: $yellow-bg;
+  color: #232b52;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
 }
 
-.carousel-caption a:hover{
-    background: $yellow-hover;
+.carousel-caption a:hover {
+  background: #d4ac27;
 }
 
 .carousel-indicators button.active {
-  background-color: $yellow-bg;
+  background-color: #f1C63B;
 }
+
 /* about */
 .content-about {
   height: 38.93rem;
 }
 
 .container-box {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container-box img {
@@ -198,16 +190,18 @@ ul.menu li a.btn-login:hover{
 }
 
 .content-about .container-box h3 {
-  font-size: 1.7rem;
+  font-size: 1.37rem;
   font-weight: 200;
   line-height: 2.3rem;
-  color: $blue-bg;
+  color: #232b52;
   text-align: center;
   margin: 0 20%;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Playfair Display", serif;
 }
 
 .content-about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 3rem;
   padding: 0 3.12rem;
@@ -266,14 +260,14 @@ ul.menu li a.btn-login:hover{
 
 .recursos-info h4 {
   font-family: "Bebas Neue", cursive;
-  color: $blue-bg;
+  color: #232b52;
   font-size: 1.56rem;
   font-weight: 500;
 }
 
 .recursos-info h3 {
-  font-family: "Bebas Neue", cursive;
-  color: $blue-text-secondary;
+  font-family: "Playfair Display", serif;
+  color: #07a2ab;
   font-size: 2.18rem;
   font-weight: 300;
   margin-bottom: 3rem;
@@ -289,14 +283,14 @@ ul.menu li a.btn-login:hover{
 .recursos-info a {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
-  color: $blue-bg;
-  background: $yellow-bg;
+  color: #232b52;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
 }
 
-.recursos-info a:hover{
-    background: $yellow-hover;
+.recursos-info a:hover {
+  background: #d4ac27;
 }
 
 /* Newsletter */
@@ -315,9 +309,9 @@ ul.menu li a.btn-login:hover{
 }
 
 .content-newsletter h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Playfair Display", serif;
   font-size: 2.63rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
 }
 
@@ -336,20 +330,32 @@ ul.menu li a.btn-login:hover{
 
 .content-newsletter input[type="email"] {
   width: 20.17rem;
-  background: $blue-bg;
+  background: #232b52;
   font-family: "open sans", sans-serif;
   font-size: 1rem;
   padding: 0.4rem;
 }
 
+.content-newsletter input[type="email"]::-webkit-input-placeholder {
+  color: #f1C63B;
+}
+
+.content-newsletter input[type="email"]:-ms-input-placeholder {
+  color: #f1C63B;
+}
+
+.content-newsletter input[type="email"]::-ms-input-placeholder {
+  color: #f1C63B;
+}
+
 .content-newsletter input[type="email"]::placeholder {
-  color: $yellow-bg;
+  color: #f1C63B;
 }
 
 .content-newsletter input[type="submit"] {
   width: 10.93rem;
-  background: $yellow-bg;
-  color: $blue-bg;
+  background: #f1C63B;
+  color: #232b52;
   font-family: "open sans", sans-serif;
   font-size: 1rem;
   padding: 0.4rem;
@@ -369,39 +375,46 @@ ul.menu li a.btn-login:hover{
 /* servicios */
 .services {
   height: 63.58rem;
-  background: no-repeat center url(../src/bg-servicios.jpeg),
-    linear-gradient(#152053c2, #152053c2);
+  background: no-repeat center url(../src/bg-servicios.jpeg), -webkit-gradient(linear, left top, left bottom, from(#152053c2), to(#152053c2));
+  background: no-repeat center url(../src/bg-servicios.jpeg), linear-gradient(#152053c2, #152053c2);
   background-blend-mode: overlay;
   background-size: auto;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   padding: 0 3.12rem;
 }
 
 .services h4 {
   font-family: "Bebas Neue", cursive;
-  color: $yellow-bg;
+  color: #f1C63B;
   font-size: 1.56rem;
   font-weight: 500;
 }
 
 .services h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Playfair Display", serif;
   font-size: 2.93rem;
   font-weight: 300;
-  color: $blue-text-secondary;
+  color: #07a2ab;
   margin-bottom: 2.45rem;
 }
 
 .services-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   text-align: center;
   margin-bottom: 2.45rem;
 }
 
-.services-itens{
+.services-itens {
   width: 25%;
 }
 
@@ -409,19 +422,20 @@ ul.menu li a.btn-login:hover{
   max-width: 18.04rem;
   max-height: 30.51rem;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .services-itens h5 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Playfair Display", serif;
   font-size: 1.37rem;
   padding: 1rem 0;
   margin: 0 20%;
-  color: $yellow-bg;
+  color: #f1C63B;
 }
 
 .services h2 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Playfair Display", serif;
   font-size: 2.12rem;
   font-weight: 300;
   color: #fff;
@@ -431,21 +445,21 @@ ul.menu li a.btn-login:hover{
 .services p {
   font-family: "open sans", sans-serif;
   font-size: 1.37rem;
-  color: $blue-text-secondary;
+  color: #07a2ab;
   margin-bottom: 1rem;
 }
 
 .services a {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
-  color: $blue-bg;
-  background: $yellow-bg;
+  color: #232b52;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
 }
 
-.services a:hover{
-    background: $yellow-hover;
+.services a:hover {
+  background: #d4ac27;
 }
 
 /* Gallery */
@@ -456,6 +470,8 @@ ul.menu li a.btn-login:hover{
 }
 
 .gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -469,7 +485,9 @@ ul.menu li a.btn-login:hover{
   background: url(../src/bg-media-cart.png);
   padding: 0 3.12rem;
   margin-top: -5px;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .download-materials {
@@ -480,30 +498,37 @@ ul.menu li a.btn-login:hover{
   box-shadow: 0px 0px 16px 0px #8d8d8d;
   border-radius: 0.5rem;
   padding: 2.56rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .download-materials h4 {
   font-family: "Bebas Neue", cursive;
-  color: $blue-text;
+  color: #00245b;
   font-size: 1.56rem;
   font-weight: 500;
 }
 
 .download-materials h1 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Playfair Display", serif;
   font-size: 2.12rem;
   font-weight: 300;
-  color: $blue-text-secondary;
+  color: #07a2ab;
   margin-bottom: 1rem;
 }
 
 .download-materials p {
   font-family: "open sans", sans-serif;
   font-size: 1rem;
-  color: $grey-txt;
+  color: #706f6f;
   margin-bottom: 1rem;
   margin-bottom: 3rem;
 }
@@ -511,15 +536,15 @@ ul.menu li a.btn-login:hover{
 .download-materials a {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
-  color: $blue-bg;
-  background: $yellow-bg;
+  color: #232b52;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
   width: 15.11rem;
 }
 
-.download-materials a:hover{
-    background: $yellow-hover;
+.download-materials a:hover {
+  background: #d4ac27;
 }
 
 .img-before-footer {
@@ -532,11 +557,16 @@ ul.menu li a.btn-login:hover{
   width: 100%;
   padding: 2.56rem;
   background: #fff;
-  border-top: 10px solid $blue-text-secondary;
-  flex-direction: column;
+  border-top: 10px solid #07a2ab;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nav-footer .website-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -557,23 +587,23 @@ ul.menu li a.btn-login:hover{
 #footer-about p {
   line-height: 1.9rem;
   margin: 0 6rem 2rem 0;
-  color: $blue-bg;
+  color: #232b52;
 }
 
-#footer-about a #btn-yellow,
-#footer-recursos a #btn-yellow,
-#footer-services a #btn-yellow{
+#footer-about a,
+#footer-recursos a,
+#footer-services a {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
-  color: $blue-bg;
-  background: $yellow-bg;
+  color: #232b52;
+  background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
   width: 15.11rem;
 }
 
-#footer-about a #btn-yellow:hover, #footer-recursos a #btn-yellow:hover, #footer-services a #btn-yellow:hover{
-    background: $yellow-hover;
+#footer-about a:hover, #footer-recursos a:hover, #footer-services a:hover {
+  background: #d4ac27;
 }
 
 #footer-recursos,
@@ -584,7 +614,7 @@ ul.menu li a.btn-login:hover{
 #footer-recursos h4,
 #footer-services h4 {
   font-family: "Bebas Neue", cursive;
-  color: $blue-text;
+  color: #00245b;
   font-size: 1.56rem;
   font-weight: 500;
 }
@@ -596,24 +626,30 @@ ul.menu li a.btn-login:hover{
 
 #footer-recursos nav ul li,
 #footer-services nav ul li {
-  font-family: "Bebas Neue", cursive;
-  color: $blue-bg;
-  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+  color: #232b52;
+  font-size: 1rem;
   font-weight: 400;
   padding: 0.3rem 0;
 }
 
 footer .footer-contact {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 8.92rem;
   width: 100%;
   background: no-repeat center url(../src/bg-footer-contact.png);
   background-size: cover;
   padding: 0 2.56rem;
-  border-bottom: 10px solid $blue-text-secondary;
+  border-bottom: 10px solid #07a2ab;
 }
 
 .footer-contact div {
@@ -623,17 +659,17 @@ footer .footer-contact {
 .footer-contact #address-1,
 .footer-contact #address-2,
 .footer-contact #social {
-  border-left: 3px solid $yellow-bg;
+  border-left: 3px solid #f1C63B;
   padding-left: 0.7rem;
 }
 
 .footer-contact #address-1 h4,
 .footer-contact #address-2 h4,
 .footer-contact #social h4 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Playfair Display", serif;
   color: #fff;
-  font-weight: 500;
-  font-size: 1.3rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .footer-contact #address-1 p,
@@ -647,20 +683,22 @@ footer .footer-contact {
 }
 
 #social nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #social nav ul li {
   margin-right: 1rem;
-  color: $yellow-bg;
+  color: #f1C63B;
   font-size: 1.1rem;
-  border: 2px solid $yellow-bg;
+  border: 2px solid #f1C63B;
   padding: 0.3rem 0.6rem;
   border-radius: 5rem;
 }
 
 #social nav ul li a {
-  color: $yellow-bg;
+  color: #f1C63B;
 }
 
 @media (max-width: 768px) {
@@ -670,7 +708,7 @@ footer .footer-contact {
     width: 100%;
     top: 9rem;
     right: 0;
-    background: $blue-bg;
+    background: #232b52;
     display: block;
     height: 0;
     z-index: 9000;
@@ -690,12 +728,10 @@ footer .footer-contact {
     border-bottom: 2px solid #e0e0e0;
     color: #fff;
   }
-
   #menu-2 {
     display: block;
     margin: 0;
   }
-
   #btn-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -709,7 +745,7 @@ footer .footer-contact {
   #hamburger {
     border-top: 3px solid;
     width: 40px;
-    color: $yellow-bg;
+    color: #f1C63B;
   }
   #hamburger::after,
   #hamburger::before {
@@ -737,125 +773,112 @@ footer .footer-contact {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   /* TOP BANNER */
   .header-line-top {
     height: auto;
     padding: 0.5rem 1.12rem;
   }
   .container__header-line-top p {
-    color: $blue-text;
+    color: #00245b;
     font-size: 0.8rem;
     text-align: center;
     font-weight: 400;
   }
-
   .header-main-content {
     padding: 0 1.12rem;
   }
   .header-main-content img.logo {
     width: 11.49rem;
   }
-
   /* SLIDER */
   .slider {
     height: auto;
     margin: 0 0 2rem 0;
   }
-
-  .carousel-inner{
+  .carousel-inner {
     height: 60vh;
   }
-
-  .carousel-item, .carousel-item img{ height: 60vh; }
-  .carousel-item img{ 
-      max-width: 100%;
-      object-fit: cover;
-   }
-
-   .carousel-caption{
-       padding: 1rem 1.12rem;
-   }
-
-   .carousel-caption h5 { font-size: 1.3rem; }
-
-   .carousel-caption h1 {
-    font-family: "Bebas Neue", cursive;
+  .carousel-item, .carousel-item img {
+    height: 60vh;
+  }
+  .carousel-item img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .carousel-caption {
+    padding: 1rem 1.12rem;
+  }
+  .carousel-caption h5 {
+    font-size: 1.3rem;
+  }
+  .carousel-caption h1 {
+    font-family: "Playfair Display", serif;
     font-size: 2rem;
     margin-right: 0;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    }
-
-    .carousel-caption a {
-        font-size: 1rem;
-        padding: 0.4rem 1.7rem;
-    }
-
+  }
+  .carousel-caption a {
+    font-size: 1rem;
+    padding: 0.4rem 1.7rem;
+  }
   /* ABOUT */
   .container-box,
   .content-recursos {
     height: auto;
     padding: 0rem 1.12rem;
   }
-
   .content-about {
-    height: auto ;
+    height: auto;
     padding: 2rem 0;
   }
   .container-box img {
     width: 8.49rem;
   }
-
   .content-about .container-box h3 {
     font-size: 1.1rem;
     font-weight: 400;
     margin: 0 1rem;
   }
-
   .content-about-box {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0;
   }
-
   .content-about-itens {
     width: 50%;
     padding: 1rem;
   }
-
   .content-about-itens:nth-child(1) img {
     width: 4.69rem;
     height: 4.16rem;
   }
-
   .content-about-itens:nth-child(2) img {
     width: 4.91rem;
     height: 3.78rem;
   }
-
   .content-about-itens:nth-child(3) img {
     width: 4.28rem;
     height: 4.31rem;
   }
-
   .content-about-itens:nth-child(4) img {
     width: 3.76rem;
     height: 4.32rem;
   }
-
   /* RECURSOS */
-
   .content-recursos {
     margin: 1.5em 0rem;
     padding: 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .recursos-banner,
   .recursos-info {
     width: 100%;
   }
-
   .recursos-banner img {
     width: 95vw;
   }
@@ -863,13 +886,11 @@ footer .footer-contact {
     padding: 1rem 1.12rem;
     text-align: center;
   }
-
   /* Newsletter */
   .newsletter {
     height: auto;
     padding: 2rem 1.12rem;
   }
-
   .content-newsletter {
     width: 100vw;
   }
@@ -879,70 +900,64 @@ footer .footer-contact {
   .banner-newsletter {
     display: none;
   }
-
   /* Services */
   .services {
     height: auto;
     padding: 2rem 1.12rem;
     text-align: center;
   }
-  .services h1{
-      color: #fff;
+  .services h1 {
+    color: #fff;
   }
-
   .services-box {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   .services-itens {
     width: 43vw;
     margin-bottom: 1rem;
   }
-
   .services-itens img {
     max-height: 13.51rem;
     border-radius: 1rem;
   }
-
   .services-itens h5 {
     font-size: 1rem;
     margin: 0 10%;
   }
-
   /* media cart */
   .media-cart {
     height: auto;
     padding: 2rem 1.12rem;
   }
-
   .download-materials {
     width: 100vw;
     height: 20.44rem;
     padding: 1.56rem;
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   /* after contact */
   .img-before-footer {
     height: 6rem;
   }
-
   /* contact */
   .nav-footer {
     width: 100%;
     padding: 2rem 1.12rem;
   }
-
   .website-footer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .nav-footer .website-footer div {
     width: 100%;
     margin-bottom: 2rem;
   }
-
   #footer-about img {
     width: 12.49rem;
   }
@@ -950,36 +965,33 @@ footer .footer-contact {
   #footer-recursos {
     border-right: none;
   }
-
   #footer-recursos,
   #footer-services {
     padding-left: 0;
     margin-bottom: 3rem;
   }
-
   #footer-about {
     margin-bottom: 3rem;
   }
-
   #footer-about p {
     font-size: 1rem;
     margin: 0 0 2rem 0;
   }
   /* footer */
-
   footer .footer-contact {
     height: auto;
     padding: 2rem 1.12rem;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: repeat center url(../src/bg-footer-contact.png);
     background-size: cover;
   }
-
   .footer-contact div {
     width: 100%;
     margin: 1rem 1.12rem;
   }
-
   #social nav ul li {
     margin-right: 0.7rem;
     font-size: 0.9rem;
@@ -992,3 +1004,4 @@ footer .footer-contact {
     display: none;
   }
 }
+/*# sourceMappingURL=style.css.map */

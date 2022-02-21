@@ -61,7 +61,7 @@ p {
 .container__header-line-top p {
   font-family: "Bebas Neue", cursive;
   color: #00245b;
-  font-size: 1.2rem;
+  font-size: 1.06rem;
   margin: 0;
 }
 
@@ -191,9 +191,12 @@ ul.menu li a.btn-login:hover {
   background-color: #f1C63B;
 }
 
-/* about */
-.content-about {
-  height: 38.93rem;
+/* servicios */
+.content-servicios-title {
+  height: auto;
+  background: url(../src/bg-recursos.png);
+  padding: 3rem 0;
+  border-bottom: solid 0.9rem #FFC400;
 }
 
 .container-box {
@@ -204,374 +207,101 @@ ul.menu li a.btn-login:hover {
 }
 
 .container-box img {
-  width: 13.49rem;
-  margin-bottom: 1.3rem;
+  width: 11.49rem;
+  margin-bottom: 3.3rem;
 }
 
-.content-about .container-box h3 {
-  font-size: 1.7rem;
-  font-weight: 200;
-  line-height: 2.3rem;
+.content-servicios-title .container-box h1 {
+  font-size: 3.49rem;
   color: #232b52;
-  text-align: center;
-  margin: 0 20%;
   font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
-.content-about-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3rem;
-  padding: 0 3.12rem;
-}
-
-.content-about-itens {
-  width: 25%;
-  padding: 2rem;
+.content-servicios-title .container-box h3 {
+  font-size: 5.4rem;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 200;
+  line-height: 6.3rem;
+  color: #07a2ab;
   text-align: center;
 }
 
-.content-about-itens:nth-child(1) img {
-  width: 5.87rem;
-  height: 5.2rem;
+.content-servicios-banner {
+  background: url(../src/servicios-team.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35rem;
 }
 
-.content-about-itens:nth-child(2) img {
-  width: 6.14rem;
-  height: 4.73rem;
+/*  ----------  */
+.content-servicios {
+  height: auto;
+  padding: 2rem 3.12rem 2rem 0;
 }
 
-.content-about-itens:nth-child(3) img {
-  width: 5.36rem;
-  height: 5.39rem;
-}
-
-.content-about-itens:nth-child(4) img {
-  width: 4.7rem;
-  height: 5.4rem;
-}
-
-.content-about .content-about-itens p.content-about-item-text {
-  font-family: "open sans", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin: 0;
-}
-
-.content-recursos {
-  height: 31.5rem;
-  padding: 0 3.12rem 0 0;
-}
-
-.recursos-banner {
+.servicios-banner {
   width: 50%;
 }
 
-.recursos-banner img {
-  width: 44.81rem;
+.servicios-banner img {
+  width: 43.81rem;
   border-radius: 0 1rem 1rem 0;
 }
 
-.recursos-info {
-  padding: 0 0 0 2rem;
+.servicios-info {
+  width: 50%;
 }
 
-.recursos-info h4 {
+.servicios-info h4 {
   font-family: "Bebas Neue", cursive;
   color: #232b52;
   font-size: 1.56rem;
   font-weight: 500;
 }
 
-.recursos-info h3 {
+.servicios-info h3 {
   font-family: "Bebas Neue", cursive;
   color: #07a2ab;
-  font-size: 2.18rem;
+  font-size: 3.18rem;
   font-weight: 300;
   margin-bottom: 3rem;
 }
 
-.recursos-info p {
+.servicios-info p {
   font-family: "open sans", sans-serif;
+  color: #706f6f;
   font-size: 1.2rem;
   line-height: 2rem;
-  margin-bottom: 3rem;
-}
-
-.recursos-info a {
-  font-family: "open sans", sans-serif;
-  font-size: 1.2rem;
-  color: #232b52;
-  background: #f1C63B;
-  padding: 0.6rem 3rem;
-  font-weight: 700;
-}
-
-.recursos-info a:hover {
-  background: #d4ac27;
-}
-
-/* Newsletter */
-.newsletter {
-  height: 15.21rem;
-  background: no-repeat bottom center url(../src/bg-newsletter.png);
-  background-size: cover;
-  padding: 0 3.12rem;
-  width: 100%;
-  margin-top: 2rem;
-}
-
-.content-newsletter {
-  width: 60%;
-  text-align: center;
-}
-
-.content-newsletter h1 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 2.63rem;
-  font-weight: 500;
-  color: #fff;
-}
-
-.content-newsletter p {
-  font-family: "open sans", sans-serif;
-  font-size: 1rem;
-  color: #fff;
-  font-weight: 300;
-  margin: 1rem 0;
-}
-
-.content-newsletter input {
-  border: none;
-  height: 2.82rem;
-}
-
-.content-newsletter input[type="email"] {
-  width: 20.17rem;
-  background: #232b52;
-  font-family: "open sans", sans-serif;
-  font-size: 1rem;
-  padding: 0.4rem;
-}
-
-.content-newsletter input[type="email"]::-webkit-input-placeholder {
-  color: #f1C63B;
-}
-
-.content-newsletter input[type="email"]:-ms-input-placeholder {
-  color: #f1C63B;
-}
-
-.content-newsletter input[type="email"]::-ms-input-placeholder {
-  color: #f1C63B;
-}
-
-.content-newsletter input[type="email"]::placeholder {
-  color: #f1C63B;
-}
-
-.content-newsletter input[type="submit"] {
-  width: 10.93rem;
-  background: #f1C63B;
-  color: #232b52;
-  font-family: "open sans", sans-serif;
-  font-size: 1rem;
-  padding: 0.4rem;
-  font-weight: 600;
-  margin-left: -5px;
-}
-
-.banner-newsletter {
-  width: 40%;
-}
-
-.banner-newsletter img {
-  height: 18.93rem;
-  margin-right: 5rem;
-}
-
-/* servicios */
-.services {
-  height: 63.58rem;
-  background: no-repeat center url(../src/bg-servicios.jpeg), -webkit-gradient(linear, left top, left bottom, from(#152053c2), to(#152053c2));
-  background: no-repeat center url(../src/bg-servicios.jpeg), linear-gradient(#152053c2, #152053c2);
-  background-blend-mode: overlay;
-  background-size: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  padding: 0 3.12rem;
-}
-
-.services h4 {
-  font-family: "Bebas Neue", cursive;
-  color: #f1C63B;
-  font-size: 1.56rem;
-  font-weight: 500;
-}
-
-.services h1 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 2.93rem;
-  font-weight: 300;
-  color: #07a2ab;
-  margin-bottom: 2.45rem;
-}
-
-.services-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 2.45rem;
-}
-
-.services-itens {
-  width: 25%;
-}
-
-.services-itens img {
-  max-width: 18.04rem;
-  max-height: 30.51rem;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.services-itens h5 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.37rem;
-  padding: 1rem 0;
-  margin: 0 20%;
-  color: #f1C63B;
-}
-
-.services h2 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 2.12rem;
-  font-weight: 300;
-  color: #fff;
   margin-bottom: 1rem;
 }
 
-.services p {
+.servicios-info ul {
   font-family: "open sans", sans-serif;
-  font-size: 1.37rem;
-  color: #07a2ab;
-  margin-bottom: 1rem;
-}
-
-.services a {
-  font-family: "open sans", sans-serif;
-  font-size: 1.2rem;
-  color: #232b52;
-  background: #f1C63B;
-  padding: 0.6rem 3rem;
-  font-weight: 700;
-}
-
-.services a:hover {
-  background: #d4ac27;
-}
-
-/* Gallery */
-.gallery {
-  height: auto;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.gallery ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.gallery ul li img {
-  width: calc(100vw / 4);
-}
-
-/* media cart */
-.media-cart {
-  height: 32.76rem;
-  background: url(../src/bg-media-cart.png);
-  padding: 0 3.12rem;
-  margin-top: -5px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.download-materials {
-  width: 35.99rem;
-  height: 20.44rem;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 16px 0px #8d8d8d;
-  box-shadow: 0px 0px 16px 0px #8d8d8d;
-  border-radius: 0.5rem;
-  padding: 2.56rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.download-materials h4 {
-  font-family: "Bebas Neue", cursive;
-  color: #00245b;
-  font-size: 1.56rem;
-  font-weight: 500;
-}
-
-.download-materials h1 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 2.12rem;
-  font-weight: 300;
-  color: #07a2ab;
-  margin-bottom: 1rem;
-}
-
-.download-materials p {
-  font-family: "open sans", sans-serif;
-  font-size: 1rem;
+  list-style: disc;
   color: #706f6f;
+  margin-left: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   margin-bottom: 1rem;
-  margin-bottom: 3rem;
 }
 
-.download-materials a {
+.servicios-info a {
   font-family: "open sans", sans-serif;
   font-size: 1.2rem;
   color: #232b52;
   background: #f1C63B;
   padding: 0.6rem 3rem;
   font-weight: 700;
-  width: 15.11rem;
 }
 
-.download-materials a:hover {
+.servicios-info a:hover {
   background: #d4ac27;
 }
 
-.img-before-footer {
-  height: 21.36rem;
-  background: no-repeat center url(../src/bg-img-before-footer.png);
-  background-size: cover;
-}
-
+/*  -------  */
 .nav-footer {
   width: 100%;
   padding: 2.56rem;
@@ -812,7 +542,7 @@ footer .footer-contact {
   /* SLIDER */
   .slider {
     height: auto;
-    margin: 0 0 2rem 0;
+    margin: 0;
   }
   .carousel-inner {
     height: 60vh;
@@ -842,51 +572,12 @@ footer .footer-contact {
     font-size: 1rem;
     padding: 0.4rem 1.7rem;
   }
-  /* ABOUT */
-  .container-box,
-  .content-recursos {
+  /* servicios */
+  .content-servicios {
     height: auto;
     padding: 0rem 1.12rem;
   }
-  .content-about {
-    height: auto;
-    padding: 2rem 0;
-  }
-  .container-box img {
-    width: 8.49rem;
-  }
-  .content-about .container-box h3 {
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin: 0 1rem;
-  }
-  .content-about-box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 0;
-  }
-  .content-about-itens {
-    width: 50%;
-    padding: 1rem;
-  }
-  .content-about-itens:nth-child(1) img {
-    width: 4.69rem;
-    height: 4.16rem;
-  }
-  .content-about-itens:nth-child(2) img {
-    width: 4.91rem;
-    height: 3.78rem;
-  }
-  .content-about-itens:nth-child(3) img {
-    width: 4.28rem;
-    height: 4.31rem;
-  }
-  .content-about-itens:nth-child(4) img {
-    width: 3.76rem;
-    height: 4.32rem;
-  }
-  /* RECURSOS */
-  .content-recursos {
+  .content-servicios {
     margin: 1.5em 0rem;
     padding: 0;
     -webkit-box-orient: vertical;
@@ -894,73 +585,16 @@ footer .footer-contact {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .recursos-banner,
-  .recursos-info {
+  .servicios-banner,
+  .servicios-info {
     width: 100%;
   }
-  .recursos-banner img {
+  .servicios-banner img {
     width: 95vw;
   }
-  .recursos-info {
+  .servicios-info {
     padding: 1rem 1.12rem;
-    text-align: center;
-  }
-  /* Newsletter */
-  .newsletter {
-    height: auto;
-    padding: 2rem 1.12rem;
-  }
-  .content-newsletter {
-    width: 100vw;
-  }
-  .content-newsletter input[type="email"] {
-    width: 20.17rem;
-  }
-  .banner-newsletter {
-    display: none;
-  }
-  /* Services */
-  .services {
-    height: auto;
-    padding: 2rem 1.12rem;
-    text-align: center;
-  }
-  .services h1 {
-    color: #fff;
-  }
-  .services-box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .services-itens {
-    width: 43vw;
-    margin-bottom: 1rem;
-  }
-  .services-itens img {
-    max-height: 13.51rem;
-    border-radius: 1rem;
-  }
-  .services-itens h5 {
-    font-size: 1rem;
-    margin: 0 10%;
-  }
-  /* media cart */
-  .media-cart {
-    height: auto;
-    padding: 2rem 1.12rem;
-  }
-  .download-materials {
-    width: 100vw;
-    height: 20.44rem;
-    padding: 1.56rem;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  /* after contact */
-  .img-before-footer {
-    height: 6rem;
+    text-align: left;
   }
   /* contact */
   .nav-footer {
@@ -1023,4 +657,4 @@ footer .footer-contact {
     display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=servicios.css.map */
