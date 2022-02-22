@@ -205,11 +205,6 @@ ul.menu li a.btn-login:hover {
           flex-direction: column;
 }
 
-.container-box img {
-  width: 11.49rem;
-  margin-bottom: 3.3rem;
-}
-
 .content-contact-title .container-box h1 {
   font-size: 3.49rem;
   color: #232b52;

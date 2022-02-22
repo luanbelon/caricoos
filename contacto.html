@@ -120,11 +120,11 @@
                 <h1>CONTACTA CON NOSOTROS</h1>
                 <p>En breve nos pondremos en contacto.<br>
                 Muchas gracias</p>
-                <form action="">
-                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"><br>
-                    <input type="email" name="E-mail" id="E-mail" placeholder="E-mail"><br>
-                    <input type="text" name="Motivo de contacto" id="Motivo-de-contacto" placeholder="Motivo de contacto"><br>
-                    <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="Comentario"></textarea><br>
+                <form action="./email.php" method="POST" >
+                    <input type="text" name="nombre" id="Nombre" placeholder="Nombre"><br>
+                    <input type="email" name="email" id="E-mail" placeholder="E-mail"><br>
+                    <input type="text" name="motivoContacto" id="Motivo-de-contacto" placeholder="Motivo de contacto"><br>
+                    <textarea name="comentario" id="Comentario" cols="30" rows="10" placeholder="Comentario"></textarea><br>
                     <input type="submit" value="Enviar">
                 </form>
             </div>
